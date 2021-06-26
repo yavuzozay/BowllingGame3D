@@ -2,7 +2,7 @@
 Unity3D Bowling Game
 
 # Platform-Oyunu-Unity-3D
-![banner](https://github.com/yavuzozay/BowllingGame3D/Previews/gamescene.PNG?raw=true)
+![banner](https://github.com/yavuzozay/BowllingGame3D/blob/main/Previews/gamescene.PNG?raw=true)
 ## Oynamak için 
 [Play](https://yavuzozay.github.io/bowlinggame/index.html)
 
@@ -16,7 +16,7 @@ Unity3D Bowling Game
 #### - Photoshop
 ## 
 
-![banner](https://github.com/yavuzozay/BowllingGame3D/Previews/controls.PNG?raw=true)
-![banner](https://github.com/yavuzozay/BowllingGame3D/Previews/mainmenu.PNG?raw=true)
-![banner](https://github.com/yavuzozay/BowllingGame3D/Previews/resultScene.PNG?raw=true)
+![banner](https://github.com/yavuzozay/BowllingGame3D/blob/main/Previews/controls.PNG?raw=true)
+![banner](https://github.com/yavuzozay/BowllingGame3D/blob/main/Previews/mainmenu.PNG?raw=true)
+![banner](https://github.com/yavuzozay/BowllingGame3D/blob/main/Previews/resultScene.PNG?raw=true)
 
