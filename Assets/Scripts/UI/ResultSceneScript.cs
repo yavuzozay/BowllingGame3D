@@ -11,6 +11,6 @@ public class ResultSceneScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        yourScore.text = ScoreMan.Instance().skor.ToString();
+       // yourScore.text = ScoreMan.Instance().skor.ToString();
     }
 }

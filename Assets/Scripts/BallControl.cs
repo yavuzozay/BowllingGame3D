@@ -10,6 +10,7 @@ public class BallControl : MonoBehaviour
     float tempSpeed;
     bool canControl= true;
     
+    
 
     Vector3 firstPosition;
     Quaternion firstRotation;
@@ -18,6 +19,8 @@ public class BallControl : MonoBehaviour
 
     private void Awake()
     {
+        
+        
         firstPosition = gameObject.transform.position;
         
         firstRotation = gameObject.transform.rotation;
@@ -27,9 +30,12 @@ public class BallControl : MonoBehaviour
    
     void Update()
     {
+        Debug.Log("kalan" + GameManage.kalanHak);
 
-       
-      
+
+        if (a)
+            StartCoroutine(Next());
+
 
     }
     float abc = 0;
@@ -37,7 +43,7 @@ public class BallControl : MonoBehaviour
     float sure = 0;
     private void FixedUpdate()
     {
-
+    
         Control();
         if (Input.GetKey(KeyCode.N))
             SceneManager.LoadScene(1);
@@ -61,7 +67,7 @@ public class BallControl : MonoBehaviour
             if (Input.GetKey(KeyCode.Space))
 
             {
-                
+              
 
                 rigidbody.constraints = RigidbodyConstraints.None;
                 speed = tempSpeed;
@@ -71,30 +77,28 @@ public class BallControl : MonoBehaviour
                 sure = 0;
                 canControl = false;
                 a = true;
-                
+                GameManage.kalanHak--;
 
             }
 
         }
-        if(a)
-            StartCoroutine(Next());
+     
     }
     IEnumerator Next()
     {
         a = false;
+
+
         yield return new WaitForSeconds(2.5f);
 
 
-
         rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-       // yield return new WaitForSeconds(1.0f);
+        // yield return new WaitForSeconds(1.0f);
         gameObject.transform.position = firstPosition;
         gameObject.transform.rotation = firstRotation;
-      //  yield return new WaitForSeconds(1.0f);
-        Debug.Log("aktif");
+        GameManage.GameControl();
+      
         canControl = true;
-
-
 
 
 
