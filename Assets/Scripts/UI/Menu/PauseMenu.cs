@@ -9,8 +9,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Awake()
     {
-        GameIsPaused = false;
-        pauseMenuUI.SetActive(false);
+        Resume();
     }
     private void Update()
     {
@@ -39,7 +38,8 @@ public class PauseMenu : MonoBehaviour
     }
    public void GoToMainMenu()
     {
-        Loader.Load(1);
+        Loader.Load(0);
+        GameManage.kalanHak = 2;
     }
     public void Quit()
     {

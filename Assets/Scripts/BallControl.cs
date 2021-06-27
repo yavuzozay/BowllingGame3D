@@ -9,6 +9,7 @@ public class BallControl : MonoBehaviour
     public float speed;
     float tempSpeed;
     bool canControl= true;
+    private int maxHak=2;
     
     
 
@@ -30,7 +31,6 @@ public class BallControl : MonoBehaviour
    
     void Update()
     {
-        Debug.Log("kalan" + GameManage.kalanHak);
 
 
         if (a)
@@ -47,6 +47,7 @@ public class BallControl : MonoBehaviour
         Control();
         if (Input.GetKey(KeyCode.N))
             SceneManager.LoadScene(1);
+        Debug.Log("kalan "+GameManage.kalanHak);
     }
   
 
@@ -89,16 +90,18 @@ public class BallControl : MonoBehaviour
         a = false;
 
 
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(4.5f);
 
 
         rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         // yield return new WaitForSeconds(1.0f);
         gameObject.transform.position = firstPosition;
         gameObject.transform.rotation = firstRotation;
+
         GameManage.GameControl();
-      
         canControl = true;
+
+
 
 
 

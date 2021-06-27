@@ -5,13 +5,9 @@ using UnityEngine;
 public class ScoreMan : MonoBehaviour
 {
     private static ScoreMan _instance;
-    private int _skor = 0;
+    public int skor = 0;
 
-    public int skor
-        {
-        get{ return _skor; }
-        set{ _skor = value; }
-        }
+  
     public static ScoreMan Instance()
     {
        

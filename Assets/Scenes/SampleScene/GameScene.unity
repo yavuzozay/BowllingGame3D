@@ -161,7 +161,7 @@ RectTransform:
   m_GameObject: {fileID: 173632597}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4572, y: 1.4572, z: 1.4572}
   m_Children:
   - {fileID: 714464215}
   m_Father: {fileID: 1865528032}
@@ -169,7 +169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 82, y: -53.5}
+  m_AnchoredPosition: {x: 100.74, y: -65.73}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &173632599
@@ -345,6 +345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.3218
+      objectReference: {fileID: 0}
+    - target: {fileID: -7918335002988649766, guid: 1cf4af6584394fc48802f3a14b203185,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1cf4af6584394fc48802f3a14b203185,
         type: 3}
@@ -866,7 +871,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738767024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: -0.54, z: 0}
+  m_LocalPosition: {x: -0.11, y: -0.54, z: 6.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 774562696}
@@ -1250,7 +1255,7 @@ RectTransform:
   m_GameObject: {fileID: 1024605119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4572, y: 1.4572, z: 1.4572}
   m_Children:
   - {fileID: 321201649}
   m_Father: {fileID: 1865528032}
@@ -1258,7 +1263,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -18.745, y: 12.23}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1024605121
@@ -1572,7 +1577,7 @@ Transform:
   m_GameObject: {fileID: 1272275469}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: -0.87991, z: 7.1563396}
-  m_LocalScale: {x: 18.987562, y: 1.8185, z: 22.486525}
+  m_LocalScale: {x: 28.987755, y: 1.8901489, z: 32.87393}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -2138,7 +2143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 1859312463}
-  speed: 2100
+  speed: 1800
 --- !u!64 &1859312467
 MeshCollider:
   m_ObjectHideFlags: 0
