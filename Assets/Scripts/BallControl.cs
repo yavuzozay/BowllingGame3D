@@ -47,7 +47,7 @@ public class BallControl : MonoBehaviour
         Control();
         if (Input.GetKey(KeyCode.N))
             SceneManager.LoadScene(1);
-        Debug.Log("kalan "+GameManage.kalanHak);
+        Debug.Log("kalan "+GameManage.Instance.kalanHak);
     }
   
 
@@ -78,7 +78,7 @@ public class BallControl : MonoBehaviour
                 sure = 0;
                 canControl = false;
                 a = true;
-                GameManage.kalanHak--;
+                GameManage.Instance.kalanHak--;
 
             }
 
@@ -98,7 +98,7 @@ public class BallControl : MonoBehaviour
         gameObject.transform.position = firstPosition;
         gameObject.transform.rotation = firstRotation;
 
-        GameManage.GameControl();
+        GameManage.Instance.GameControl();
         canControl = true;
 
 

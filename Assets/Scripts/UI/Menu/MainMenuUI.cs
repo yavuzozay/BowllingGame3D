@@ -13,7 +13,7 @@ public class MainMenuUI : MonoBehaviour
     }
     public void PlayClick()
     {
-        Loader.Load(1);
+        Loader.Instance.Load(1);
     }
     public void ControlsClick()
     {

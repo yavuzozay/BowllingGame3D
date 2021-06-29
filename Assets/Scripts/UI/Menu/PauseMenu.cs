@@ -38,8 +38,9 @@ public class PauseMenu : MonoBehaviour
     }
    public void GoToMainMenu()
     {
-        Loader.Load(0);
-        GameManage.kalanHak = 2;
+        Loader.Instance.Load(0);
+
+        GameManage.Instance.kalanHak = 2;
     }
     public void Quit()
     {

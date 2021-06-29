@@ -11,7 +11,8 @@ public class GroundControl : MonoBehaviour
         {
             Debug.Log(other.gameObject.transform.parent.gameObject);
             Destroy(other.gameObject.transform.parent.gameObject);
-            ScoreMan.Instance().skor++;
+            GameManage.Instance.score++;
+            
         }
     }
   

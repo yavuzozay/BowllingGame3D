@@ -9,16 +9,16 @@ public class ResultSceneScript : MonoBehaviour
 
     private void Awake()
     {
-        yourScore.text = "Score  :  "+ScoreMan.Instance().skor.ToString();
+        yourScore.text = "Score  :  "+ GameManage.Instance.score.ToString();
 
     }
     private void Start()
     {
-        ScoreMan.Instance().skor = 0;
+        GameManage.Instance.score = 0;
     }
     
     public void PlayAgain()
     {
-        Loader.Load(1);
+        Loader.Instance.Load(1);
     }
 }
