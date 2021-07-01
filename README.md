@@ -1,10 +1,10 @@
 # BowllingGame3D
 Unity3D Bowling Game
 
-# Platform-Oyunu-Unity-3D
+
 ![banner](https://github.com/yavuzozay/BowllingGame3D/blob/main/Previews/gamescene.PNG?raw=true)
 ## Oynamak için 
-[Play](https://yavuzozay.github.io/bowlinggame/index.html)
+[Play](https://yavuzozay.itch.io/bowling-oyunu)
 
 ## Genel Bilgiler
 #### Kodlar Assets>Scripts klasörü içindedir.
