@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BallControl : MonoBehaviour
 {
-    public Rigidbody rigidbody;
+     Rigidbody rigidbody;
     public float speed;
     float tempSpeed;
     bool canControl= true;
@@ -20,7 +20,7 @@ public class BallControl : MonoBehaviour
 
     private void Awake()
     {
-        
+        rigidbody = GetComponent<Rigidbody>();
         
         firstPosition = gameObject.transform.position;
         
@@ -38,33 +38,24 @@ public class BallControl : MonoBehaviour
 
 
     }
-    float abc = 0;
-    int temp = 0;
-    float sure = 0;
+    
     private void FixedUpdate()
     {
     
         Control();
-        if (Input.GetKey(KeyCode.N))
-            SceneManager.LoadScene(1);
-        Debug.Log("kalan "+GameManage.Instance.kalanHak);
+        
     }
-  
 
+    float x = 0;
     void Control()
     {
         if (canControl)
         {
-            float x = 0;
-            sure += Time.deltaTime;
-
-
-            Debug.Log("sure"+sure);
-
+            x += Time.fixedDeltaTime * 2;
             
-            x = Mathf.Cos(sure*8)/2;
+
             Debug.Log(x);
-            transform.position += new Vector3(x, 0, 0);
+            transform.position += new Vector3(Mathf.Cos(x*2)/3, 0, 0);
             if (Input.GetKey(KeyCode.Space))
 
             {
@@ -75,12 +66,13 @@ public class BallControl : MonoBehaviour
 
                 rigidbody.AddForce(speed * gameObject.transform.forward);
                 speed = 0;
-                sure = 0;
+               
                 canControl = false;
                 a = true;
                 GameManage.Instance.kalanHak--;
 
             }
+            
 
         }
      
@@ -89,12 +81,12 @@ public class BallControl : MonoBehaviour
     {
         a = false;
 
+        x = 0;
 
-        yield return new WaitForSeconds(4.5f);
+        yield return new WaitForSeconds(5.5f);
 
 
         rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-        // yield return new WaitForSeconds(1.0f);
         gameObject.transform.position = firstPosition;
         gameObject.transform.rotation = firstRotation;
 
